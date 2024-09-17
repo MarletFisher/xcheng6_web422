@@ -14,6 +14,8 @@ MONGODB_CONN_STRING = `mongodb+srv://frankduh:RaUKt7Zi80qvDXnL@na-xcheng6-web322
 app.use(cors()); // Cross origin resource sharing
 app.use(express.json()); // json parser
 
+export default app;
+
 app.get("/", (req, res) => {
 	res.send({ message: "API Listening" });
 });
