@@ -32,7 +32,7 @@ app.post("/api/countries", (req, res) => {
 
 app.get("/api/countries", (req, res) => {
 	let page = req.query.page ? parseInt(req.query.page) : 1;
-	let perPage = req.query.perPage ? parseInt(req.query.perPage) : 5;
+	let perPage = req.query.perPage ? parseInt(req.query.perPage) : 10;
 	let name = req.query.name ? req.query.name : "";
 
 	db.getAllCountries(parseInt(page), parseInt(perPage), name)
